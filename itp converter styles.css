@@ -1,0 +1,103 @@
+.header {
+  background-color: rgb(38, 38, 38);
+  padding-left: 25px;
+}
+
+h1,
+h2 {
+  font-family: Roboto, Arial;
+  padding-left: 25px;
+}
+
+h1 {
+  font-size: 50px;
+  color: rgb(230, 172, 0);
+}
+
+.form-field {
+  position: relative;
+  width: fit-content;
+
+  background-color: rgb(216, 216, 216);
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, .15);
+  margin-left: 50px;
+}
+
+.body-box {
+  background-color: whitesmoke
+}
+
+.scores {
+  padding: 1px 25px;
+}
+
+.input-bar {
+
+  margin-top: 10px;
+  padding: 5px;
+  width: 50px;
+}
+
+.input-bar::placeholder {
+  font-family: Roboto, Arial;
+  font-size: 14px;
+}
+
+.calculate-button {
+  display: block;
+  position: absolute;
+  right: 35px;
+  bottom: 18px;
+  background-color: aliceblue;
+  border-color: rgb(41, 118, 211);
+  border-style: solid;
+  color: rgb(41, 118, 211);
+  font-size: 20px;
+  border-width: 1px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.15s, color 0.15s;
+  transition: box-shadow 0.15s;
+  padding: 5px 15px;
+}
+
+.calculate-button:hover {
+  background-color: rgb(41, 118, 211);
+  color: white;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, .15);
+}
+
+p {
+  font-family: Roboto, Arial;
+  font-weight: 700;
+  display: inline-block;
+}
+
+@media (max-width: 750px) {
+  .scores {
+    padding: 5px;
+  }
+
+  .header {
+    height: 30px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 12px;
+  }
+
+  p {
+    font-size: 11px;
+  }
+
+  .calculate-button {
+    right: 10px;
+    bottom: 8px;
+    font-size: 11px;
+  }
+}
