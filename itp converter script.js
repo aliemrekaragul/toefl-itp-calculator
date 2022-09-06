@@ -1,4 +1,3 @@
-alert("The publisher assumes NO responsibility for the accuracy of the information available through this website!");
 const calculate = () => {
   let listening = document.querySelector("#listening").value;
   let structure = document.querySelector("#structure").value;
