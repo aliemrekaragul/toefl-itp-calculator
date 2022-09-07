@@ -72,6 +72,12 @@ p {
   display: inline-block;
 }
 
+li {
+  list-style-type: circle;
+  margin-left: 50px;
+  font-weight: 300;
+}
+
 @media (max-width: 750px) {
   .scores {
     padding: 5px;
@@ -94,20 +100,23 @@ p {
   p {
     font-size: 11px;
   }
-  .structure-text{
+
+  .structure-text {
     margin-left: 21px;
   }
- 
+
   .calculate-button {
     right: 10px;
     bottom: 8px;
     font-size: 11px;
   }
+
   .form-field {
     height: 220px;
     margin-left: 5px;
   }
-  i{
+
+  i {
     font-size: 9px;
   }
 }
