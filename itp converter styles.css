@@ -7,7 +7,7 @@ h1,
 h2 {
   font-family: Roboto, Arial;
   padding-left: 25px;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 h1 {
@@ -40,10 +40,6 @@ h1 {
   width: 50px;
 }
 
-.input-bar::placeholder {
-  font-family: Roboto, Arial;
-  font-size: 14px;
-}
 
 .calculate-button {
   display: block;
@@ -95,7 +91,10 @@ p {
   p {
     font-size: 11px;
   }
-
+  .structure-text{
+    margin-left: 21px;
+  }
+ 
   .calculate-button {
     right: 10px;
     bottom: 8px;
