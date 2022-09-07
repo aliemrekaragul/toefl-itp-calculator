@@ -101,4 +101,7 @@ p {
     bottom: 8px;
     font-size: 11px;
   }
+  .form-field {
+    height: 220px;
+  }
 }
