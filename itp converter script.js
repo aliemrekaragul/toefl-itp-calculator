@@ -36,3 +36,23 @@ const calculate = () => {
       ` Your TOEFL ITP score is ${itp_score}`;
   }
 };
+
+document.addEventListener("DOMContentLoaded", function () {
+    const cookieBanner = document.getElementById("cookieBanner");
+    const acceptCookiesBtn = document.getElementById("acceptCookies");
+
+    // Check if user previously accepted cookies
+    const cookiesAccepted = localStorage.getItem("cookiesAccepted");
+
+    if (!cookiesAccepted) {
+        cookieBanner.style.display = "block";
+    }
+
+    acceptCookiesBtn.addEventListener("click", function () {
+        // Set a flag to indicate cookies have been accepted
+        localStorage.setItem("cookiesAccepted", "true");
+        
+        // Hide the cookie banner
+        cookieBanner.style.display = "none";
+    });
+});
