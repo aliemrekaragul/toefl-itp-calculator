@@ -25,10 +25,10 @@ const calculate = () => {
 
   if (listening == "" || structure == "" || reading == "") {
     document.querySelector("#your_itp_score").innerHTML
-      = "Please enter all the fields";
+      = "Please fill all the fields";
   } else if (Number.isNaN(itp_score) == true) {
     document.querySelector("#your_itp_score").innerHTML
-      = "You entered INVALID number of correct answers... <br> or.. maybe it is not even a number...";
+      = "You entered INVALID number of correct answers. Maximum correct answers are 50, 40, 50 for Listening, Structure and Reading respectively.";
   } else {
     document.querySelector(
       "#your_itp_score"
