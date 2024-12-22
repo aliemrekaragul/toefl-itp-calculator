@@ -1,59 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frequently Asked Questions - TOEFL ITP Score Calculator</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="icon.webp">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6141054186060402"
-    crossorigin="anonymous"></script>
-</head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-3QSQXNSTG5"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-3QSQXNSTG5');
-</script>
+<head>
+    <title>Frequently Asked Questions</title>
+    <meta name="keywords" content="toefl, itp, TOEFL, IBT, score, calculator, puan, hesaplama, converter, calculate" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="icon.webp" />
+    <script src="script.js"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6141054186060402"
+        crossorigin="anonymous"></script>
+</head>
+
 <body>
+
     <nav>
         <button class="hamburger" id="hamburger">&#9776;</button>
         <ul id="nav-menu">
             <li><a href="index.html">ITP Calculator</a></li>
             <li><a href="tips.html">Preparation Tips</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="practice-tests.html">Practice Tests</a></li>
             <li><a href="faq.html">FAQ</a></li>
         </ul>
     </nav>
+    
+    <header>
+      <div class="header">
+        <h1 class="primary-title">
+            <h1>Frequently Asked Questions</h1>
+        </h1>
+      </div>
+    </header>
+
     <main>
-        <h1>Frequently Asked Questions</h1>
         <div class="faq-section">
             <div class="faq-item">
-                <div class="faq-question">What are the sections in the TOEFL ITP test?</div>
-                <div class="faq-answer">
+                <div id="faq-question-1" class="prep-tip-header" onclick="toggleSection('faq-answer-1')">What are the sections in the TOEFL ITP test?</div>
+                <div id="faq-answer-1" class="section-content">
                     <p>The test consists of three sections: Listening, Structure and Written Expression, and Reading.</p>
                     <p>All questions are in multiple-choice format, with four answer choices per question.</p>
-                        <ul>
-                            <li>Listening Comprehension has 50 questions and measures the ability to understand spoken English as it is used in colleges and universities.</li>
-                            <li>Structure and Written Expression has 40 questions and measures recognition of selected structural and grammatical points in standard written English </li>                       
-                            <li>Reading Comprehension has 50 questions measures the ability to read and understand academic reading material written in English</p></li>
-                        </ul>
+                    <ul>
+                        <li>Listening Comprehension has 50 questions and measures the ability to understand spoken English as it is used in colleges and universities.</li>
+                        <li>Structure and Written Expression has 40 questions and measures recognition of selected structural and grammatical points in standard written English</li>
+                        <li>Reading Comprehension has 50 questions measures the ability to read and understand academic reading material written in English</li>
+                    </ul>
                 </div>
             </div>
             <div class="faq-item">
-                <div class="faq-question">How are my scores calculated?</div>
-                <div class="faq-answer">
-                    <p>Your score will always depend on the test you take. Each test session has different questions. So, calculating a score by just counting the correct answers would include a lot of error in score calculation. That's why a scaling procedure is applied after each test depending on the difficulty of the test you take. </p>
-                    <p>For example, if you take a test that is considered harder than an average test, you will get a higher score for the same number of correct answers compared to an easier test. </p>
+                <div id="faq-question-2" class="prep-tip-header" onclick="toggleSection('faq-answer-2')">How are my scores calculated?</div>
+                <div id="faq-answer-2" class="section-content">
+                    <p>Your score will always depend on the test you take. Each test session has different questions. So, calculating a score by just counting the correct answers would include a lot of error in score calculation. That's why a scaling procedure is applied after each test depending on the difficulty of the test you take.</p>
+                    <p>For example, if you take a test that is considered harder than an average test, you will get a higher score for the same number of correct answers compared to an easier test.</p>
                     <p>Although scoring approach is known, the weightings for a correct answer is calculated after the test is applied. So we could never know exactly what your score would be even if we knew the number of correct answers before an exam.</p>
                 </div>
             </div>
             <div class="faq-item">
-                <div class="faq-question">What is a good score on the TOEFL ITP?</div>
-                <div class="faq-answer">
+                <div id="faq-question-3" class="prep-tip-header" onclick="toggleSection('faq-answer-3')">What is a good score on the TOEFL ITP?</div>
+                <div id="faq-answer-3" class="section-content">
                     <p>If your score is...</p>
                     <ul>
                         <li>above 620, it means your language proficiency is above C1 of CEFR.</li>
@@ -63,16 +69,15 @@
                     </ul>
                 </div>
             </div>
-
             <div class="faq-item">
-                <div class="faq-question">How accurate is this online calculator?</div>
-                <div class="faq-answer">
+                <div id="faq-question-4" class="prep-tip-header" onclick="toggleSection('faq-answer-4')">How accurate is this online calculator?</div>
+                <div id="faq-answer-4" class="section-content">
                     <p>This calculator provides an estimated score based on a conversion table provided by Longman's book "Preparation Course for the TOEFL Test – The Paper Test". While generally reliable, it should not be considered an official score. Always verify with your institution.</p>
                 </div>
             </div>
             <div class="faq-item">
-                <div class="faq-question">How do I use this calculator?</div>
-                <div class="faq-answer">
+                <div id="faq-question-5" class="prep-tip-header" onclick="toggleSection('faq-answer-5')">How do I use this calculator?</div>
+                <div id="faq-answer-5" class="section-content">
                     <p>Enter the number of correct answers for each section:</p>
                     <ol>
                         <li>Listening: Total correct out of 50</li>
@@ -83,9 +88,9 @@
                 </div>
             </div>
             <div class="faq-item">
-                <div class="faq-question">What is the Test of English as a Foreign Language - Institutional Testing Pogram (TOEFL ITP)? What is the difference between TOEFL ITP and TOEFL IBT?</div>
-                <div class="faq-answer">
-                    <p>TOEFL ITP  is a version of the TOEFL test designed primarily for internal use by educational institutions and organizations. It assesses the English language proficiency of non-native speakers in an academic context. TOEFL ITP is typically administered in a paper-based format.</p>
+                <div id="faq-question-6" class="prep-tip-header" onclick="toggleSection('faq-answer-6')">What is the Test of English as a Foreign Language - Institutional Testing Program (TOEFL ITP)? What is the difference between TOEFL ITP and TOEFL IBT?</div>
+                <div id="faq-answer-6" class="section-content">
+                    <p>TOEFL ITP is a version of the TOEFL test designed primarily for internal use by educational institutions and organizations. It assesses the English language proficiency of non-native speakers in an academic context. TOEFL ITP is typically administered in a paper-based format.</p>
                     <p>The ITP version is often used for purposes such as placement testing, monitoring language proficiency over time, or as a requirement for certain programs that don't require the official TOEFL iBT.</p>
                     <p>It is usually offered at institutions and may not be as widely available as the TOEFL iBT.</p>
                     <p>The main differences between TOEFL ITP and TOEFL iBT are:</p>
@@ -95,42 +100,28 @@
                         <li>TOEFL ITP is not accepted by all institutions that require TOEFL iBT scores.</li>
                         <li>TOEFL ITP may not include a speaking and a writing section while TOEFL IBT has listening, speaking, reading, and writing sections.</li>
                         <li>The TOEFL ITP uses scaled scores for each section and a total score. Each test application has its own scoring formula depending on the mean and standard deviation of the test session.</li>
-                        <strong>In other words, you might get a different total score even if your number of correct answers are the same in different test sessions.</strong>
+                        <li><strong>In other words, you might get a different total score even if your number of correct answers are the same in different test sessions.</strong></li>
                     </ul>
                 </div>
             </div>
             <div class="faq-item">
-                <div class="faq-question">Is this calculator free to use?</div>
-                <div class="faq-answer">
+                <div id="faq-question-7" class="prep-tip-header" onclick="toggleSection('faq-answer-7')">Is this calculator free to use?</div>
+                <div id="faq-answer-7" class="section-content">
                     <p>Yes, this TOEFL ITP score calculator is completely free to use for everyone.</p>
                 </div>
             </div>
         </div>
     </main>
+
     <footer class="footer">
         <p><strong>Disclaimer:</strong></p>
-        <p>This calculator provides an estimated score. Official TOEFL ITP scores are determined by the official testing organization. Always consult with your institution for precise score requirements.</p>
-        <p>Please send any feedback or queries to <a href="mailto:admin@itp-calculator.com">admin@itp-calculator.com</a>.</p>
+        <p>This calculator provides an estimated score. Official TOEFL ITP scores are determined by the official testing
+            organization. Always consult with your institution for precise score requirements.</p>
+        <p>Please send any feedback or queries to <a
+                href="mailto:admin@itp-calculator.com">admin@itp-calculator.com</a>.</p>
         <p>Read about our <a href="privacyPolicy.html">privacy policy</a>.</p>
     </footer>
-  
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {
-          const hamburger = document.querySelector('.hamburger');
-          const navMenu = document.querySelector('#nav-menu');
-    
-          hamburger.addEventListener('click', () => {
-              navMenu.classList.toggle('show');
-          });
-      });
-    </script>
-    <script>
-        document.querySelectorAll('.faq-question').forEach(item => {
-            item.addEventListener('click', event => {
-                const faqItem = event.target.closest('.faq-item');
-                faqItem.classList.toggle('active');
-            });
-        });
-    </script>
+
 </body>
+
 </html>

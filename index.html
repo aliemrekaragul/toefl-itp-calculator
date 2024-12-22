@@ -2,89 +2,90 @@
 <html lang="en">
 
 <head>
-  <meta name="keywords" content="toefl, itp, TOEFL, IBT, score, calculator, puan, hesaplama, converter">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ITP score calculator</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <meta name="keywords" content="toefl, itp, TOEFL, IBT, score, calculator, puan, hesaplama, converter, calculate" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="icon.webp" />
   <script src="script.js"></script>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="icon.webp">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6141054186060402"
-  crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script>
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-3QSQXNSTG5"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-3QSQXNSTG5');
-</script>
 <body>
-
   <nav>
     <button class="hamburger" id="hamburger">&#9776;</button>
     <ul id="nav-menu">
-        <li><a href="index.html">ITP Calculator</a></li>
-        <li><a href="tips.html">Preparation Tips</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="faq.html">FAQ</a></li>
+      <li><a href="index.html">ITP Calculator</a></li>
+      <li><a href="tips.html">Preparation Tips</a></li>
+      <li><a href="practice-tests.html">Practice Tests</a></li>
+      <li><a href="faq.html">FAQ</a></li>
     </ul>
-</nav>
+  </nav>
 
   <header>
-      <div class="header">
-          <h1 class="primary-title"><strong>TOEFL ITP</strong> <small>Score Calculator</small></h1>
-      </div>
+    <div class="header">
+      <h1 class="primary-title">
+        <strong>TOEFL ITP</strong> <small>Score Calculator</small>
+      </h1>
+    </div>
   </header>
 
   <main>
-      <section class="body-box">
-          <fieldset class="form-field">
-              <div>
-                <h2 class= "secondary-title"><strong>Enter the number of correct answers for each section below.</strong></h2>
-              </div>
-              <div class="form-group">
-                  <label for="listening">Listening:</label>
-                  <input class="input-bar" placeholder="0-50" type="number" id="listening" min="0" max="50"  />
-              </div>
-              <div class="form-group">
-                  <label for="structure">Structure & Written Expression:</label>
-                  <input class="input-bar" placeholder="0-40" type="number" id="structure" min="0" max="40" />
-              </div>
-              <div class="form-group">
-                  <label for="reading">Reading:</label>
-                  <input class="input-bar" placeholder="0-50" type="number" id="reading" min="0" max="50" />
-              </div>
-              <div>
-                  <input class="my-button" type="button" value="CALCULATE"  onclick="calculate()" />
-              </div>
-              <div>
-                  <p class="result" id="your_itp_score"></p>
-              </div>
-          </fieldset>
-      </section>
+    <section class="body-box">
+      <fieldset class="form-field">
+        <div>
+          <h2 class="secondary-title">
+            <strong>Enter the number of correct answers for each section
+              below.</strong>
+          </h2>
+        </div>
+        <div class="form-group">
+          <label for="listening">Listening:</label>
+          <input class="input-bar" placeholder="0-50" type="number" id="listening" min="0" max="50" />
+        </div>
+        <div class="form-group">
+          <label for="structure">Structure & Written Expression:</label>
+          <input class="input-bar" placeholder="0-40" type="number" id="structure" min="0" max="40" />
+        </div>
+        <div class="form-group">
+          <label for="reading">Reading:</label>
+          <input class="input-bar" placeholder="0-50" type="number" id="reading" min="0" max="50" />
+        </div>
+        <div>
+          <input class="my-button" type="button" value="CALCULATE" onclick="calculate()" />
+        </div>
+        <div>
+          <p class="result" id="your_itp_score"></p>
+        </div>
+      </fieldset>
+      <div style="margin-top: 60px; background-color: #fff9c4; padding: 10px; text-align: center; border: 2px solid #fbc02d; margin-bottom: 20px;">
+        <h2 style="color: tomato;">NEW!</h2>
+        <div style="margin-top: 30px;">
+          <p><a href="tips.html">Practice Tips!</a></p>
+          <p><a href="practice-tests.html">Practice Tests!</a></p>
+        </div>
+      </div>
+      
+
+    </section>
   </main>
   <footer class="footer">
     <p><strong>Disclaimer:</strong></p>
-    <p>This calculator provides an estimated score. Official TOEFL ITP scores are determined by the official testing organization. Always consult with your institution for precise score requirements.</p>
-    <p>Please send any feedback or queries to <a href="mailto:admin@itp-calculator.com">admin@itp-calculator.com</a>.</p>
+    <p>
+      This calculator provides an estimated score. Official TOEFL ITP scores
+      are determined by the official testing organization. Always consult with
+      your institution for precise score requirements.
+    </p>
+    <p>
+      Please send any feedback or queries to
+      <a href="mailto:admin@itp-calculator.com">admin@itp-calculator.com</a>.
+    </p>
     <p>Read about our <a href="privacyPolicy.html">privacy policy</a>.</p>
-</footer>
-
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-      const hamburger = document.querySelector('.hamburger');
-      const navMenu = document.querySelector('#nav-menu');
-
-      hamburger.addEventListener('click', () => {
-          navMenu.classList.toggle('show');
-      });
-  });
-</script>
+  </footer>
 </body>
 
 </html>

@@ -56,3 +56,46 @@ document.addEventListener("DOMContentLoaded", function () {
         cookieBanner.style.display = "none";
     });
 });
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('#nav-menu');
+
+    hamburger.addEventListener('click', () => {
+        navMenu.classList.toggle('show');
+    });
+});
+
+
+// Global site tag (gtag.js) - Google Analytics
+async
+src="https://www.googletagmanager.com/gtag/js?id=G-3QSQXNSTG5"
+
+window.dataLayer = window.dataLayer || [];
+function gtag() {
+  dataLayer.push(arguments);
+}
+gtag("js", new Date());
+
+gtag("config", "G-3QSQXNSTG5");
+
+
+  // Toggles showing/hiding each section
+  function toggleSection(sectionId) {
+    const header = event.target; 
+    const content = document.getElementById(sectionId);
+
+    // Toggle the display
+    if (content.style.display === "none" || content.style.display === "") {
+      content.style.display = "block";
+      header.classList.add("active");
+    } else {
+      content.style.display = "none";
+      header.classList.remove("active");
+    }
+  }
+
+  function checkAnswers() {
+    document.getElementById('answer-key').style.display = 'block';
+}

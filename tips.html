@@ -1,96 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Preparation Tips</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="icon.webp">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6141054186060402"
+  <title>Preparation Tips</title>
+  <meta name="keywords" content="toefl, itp, TOEFL, IBT, score, calculator, puan, hesaplama, converter, calculate" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="icon.webp" />
+  <script src="script.js"></script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6141054186060402"
     crossorigin="anonymous"></script>
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-3QSQXNSTG5"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-3QSQXNSTG5');
-</script>
 <body>
-    <nav>
-      <button class="hamburger" id="hamburger">&#9776;</button>
-      <ul id="nav-menu">
-          <li><a href="index.html">ITP Calculator</a></li>
-          <li><a href="tips.html">Preparation Tips</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-      </ul>
+  <nav>
+    <button class="hamburger" id="hamburger">&#9776;</button>
+    <ul id="nav-menu">
+      <li><a href="index.html">ITP Calculator</a></li>
+      <li><a href="tips.html">Preparation Tips</a></li>
+      <li><a href="practice-tests.html">Practice Tests</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+    </ul>
   </nav>
-  <main>
-    <h1>TOEFL ITP Preparation Tips</h1>
-    <div class="tip-box">
-        <h2>1. Understand the Test Format</h2>
-        <p>The TOEFL ITP has three sections: Listening Comprehension, Structure and Written Expression, and Reading Comprehension. Familiarize yourself with the types of questions and time limits for each section.</p>
-    </div>
-    <div class="tip-box">
-        <h2>2. Practice Listening Skills</h2>
-        <ul>
-            <li>Listen to English audio materials such as podcasts, news, and lectures.</li>
-            <li>Take note of key points, main ideas, and supporting details.</li>
-            <li>Practice with TOEFL ITP listening practice tests to improve your understanding of spoken English.</li>
-        </ul>
-    </div>
-    <div class="tip-box">
-        <h2>3. Improve Grammar and Writing</h2>
-        <ul>
-            <li>Study common grammatical structures tested in the exam.</li>
-            <li>Practice identifying errors in sentence structure and word usage.</li>
-            <li>Use grammar resources and exercises to strengthen your skills.</li>
-        </ul>
-    </div>
-    <div class="tip-box">
-        <h2>4. Build Your Vocabulary</h2>
-        <ul>
-            <li>Read academic articles, books, and essays in English.</li>
-            <li>Make flashcards for new words and review them daily.</li>
-            <li>Use the new vocabulary in sentences to reinforce learning.</li>
-        </ul>
-    </div>
-    <div class="tip-box">
-        <h2>5. Develop Reading Comprehension</h2>
-        <ul>
-            <li>Practice reading passages quickly and efficiently.</li>
-            <li>Focus on understanding main ideas and details.</li>
-            <li>Answer comprehension questions to test your understanding.</li>
-        </ul>
-    </div>
-    <div class="tip-box">
-        <h2>6. Take Practice Tests</h2>
-        <p>Simulate test conditions by taking full-length TOEFL ITP practice exams. This will help you manage your time and build confidence.</p>
-    </div>
-    <div class="tip-box">
-        <h2>7. Stay Consistent and Positive</h2>
-        <p>Set a study schedule and stick to it. Stay motivated and remember that regular practice leads to improvement.</p>
-    </div>
-</main>    
-<footer class="footer">
-    <p><strong>Disclaimer:</strong></p>
-    <p>This calculator provides an estimated score. Official TOEFL ITP scores are determined by the official testing organization. Always consult with your institution for precise score requirements.</p>
-    <p>Please send any feedback or queries to <a href="mailto:admin@itp-calculator.com">admin@itp-calculator.com</a>.</p>
-    <p>Read about our <a href="privacyPolicy.html">privacy policy</a>.</p>
-</footer>
-  
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-      const hamburger = document.querySelector('.hamburger');
-      const navMenu = document.querySelector('#nav-menu');
 
-      hamburger.addEventListener('click', () => {
-          navMenu.classList.toggle('show');
-      });
-  });
-</script>
+  <header>
+    <div class="header">
+      <h1 class="primary-title">
+        <h1>Know Your Test</h1>
+      </h1>
+    </div>
+  </header>
+
+  <main>
+    <h2>TOEFL ITP Sections and Parts</h2>
+    <img src="know-your-test/itp-sections.png" alt="ITP Sections"
+      style="display: block; margin: 0 auto; max-width: 100%; height: auto" />
+
+    <h2>Practice Tips for Sections and Parts</h2>
+    <div style="margin-top: 20px">
+      <!-- Listening Section -->
+      <div class="prep-tip-header" onclick="toggleSection('listening')">
+        Listening
+      </div>
+      <div id="listening" class="section-content">
+        <ul>
+          <li>
+            <a href="know-your-test/listening/part-a.html"><strong>Part A:</strong> 30 Short Conversations</a>
+          </li>
+          <li>
+            <a href="know-your-test/listening/part-b.html"><strong>Part B:</strong> 2 Long Conversations</a>
+          </li>
+          <li>
+            <a href="know-your-test/listening/part-c.html"><strong>Part C:</strong> 3 Lectures / Talks</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Structure & Written Expression Section -->
+      <div class="prep-tip-header" onclick="toggleSection('structure')">
+        Structure &amp; Written Expression
+      </div>
+      <div id="structure" class="section-content">
+        <ul>
+          <li>
+            <a href="know-your-test/structure-and-written-expression/part-a.html"><strong>Part A:</strong> Structure (15
+              multiple-choice
+              items)</a>
+          </li>
+          <li>
+            <a href="know-your-test/structure-and-written-expression/part-b.html"><strong>Part B:</strong> Written
+              Expression (25 multiple-choice
+              items)</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Reading Section -->
+      <div class="prep-tip-header" onclick="toggleSection('reading')">
+        Reading
+      </div>
+      <div id="reading" class="section-content">
+        <ul>
+          <li>
+            <a href="know-your-test/reading/part-a.html">5 Reading Texts and 50 Reading Comprehension Items
+              (approximately 10 per each)</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <p><strong>Disclaimer:</strong></p>
+    <p>
+      This calculator provides an estimated score. Official TOEFL ITP scores
+      are determined by the official testing organization. Always consult with
+      your institution for precise score requirements.
+    </p>
+    <p>
+      Please send any feedback or queries to
+      <a href="mailto:admin@itp-calculator.com">admin@itp-calculator.com</a>.
+    </p>
+    <p>Read about our <a href="privacyPolicy.html">privacy policy</a>.</p>
+  </footer>
 </body>
+
 </html>
