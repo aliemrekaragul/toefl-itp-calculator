@@ -35,42 +35,142 @@
   </header>
 
   <main>
-    <section class="body-box">
-      <fieldset class="form-field">
-        <div>
-          <h2 class="secondary-title">
-            <strong>Enter the number of correct answers for each section
-              below.</strong>
-          </h2>
-        </div>
-        <div class="form-group">
-          <label for="listening">Listening:</label>
-          <input class="input-bar" placeholder="0-50" type="number" id="listening" min="0" max="50" />
-        </div>
-        <div class="form-group">
-          <label for="structure">Structure & Written Expression:</label>
-          <input class="input-bar" placeholder="0-40" type="number" id="structure" min="0" max="40" />
-        </div>
-        <div class="form-group">
-          <label for="reading">Reading:</label>
-          <input class="input-bar" placeholder="0-50" type="number" id="reading" min="0" max="50" />
-        </div>
-        <div>
-          <input class="my-button" type="button" value="CALCULATE" onclick="calculate()" />
-        </div>
-        <div>
-          <p class="result" id="your_itp_score"></p>
-        </div>
-      </fieldset>
-      <div style="margin-top: 60px; background-color: #fff9c4; padding: 10px; text-align: center; border: 2px solid #fbc02d; margin-bottom: 20px;">
-        <h2 style="color: tomato;">NEW!</h2>
-        <div style="margin-top: 30px;">
-          <p><a href="tips.html">Practice Tips!</a></p>
-          <p><a href="practice-tests.html">Practice Tests!</a></p>
+    <script>
+
+      // Function to show the popup
+      function showPopup() {
+        document.getElementById('popup-notice').style.display = 'flex';
+      }
+
+      // Function to close the popup
+      function closePopup() {
+        document.getElementById('popup-notice').style.display = 'none';
+      }
+
+      // Show the popup when the DOM is fully loaded
+      document.addEventListener('DOMContentLoaded', function () {
+        showPopup();
+      });
+    </script>
+    <div id="popup-notice" class="popup-notice">
+      <div class="popup-content">
+        <span class="popup-close-btn" onclick="closePopup()">&times;</span>
+        <div style="
+              margin: 10px;
+              text-align: center;
+            ">
+          <p> <strong>NEW!</strong> </p>
+          <p>There are some new content in the <a href="tips.html">Preparation Tips</a> 
+            and <a href="practice-tests.html">Practice Tests!</a> </p>
+          <p> <strong>Check them out!</strong> </p>
         </div>
       </div>
-      
-
+    </div>
+    <section class="body-box">
+      <div>
+        <p>
+          I work for an institution whose final exam is a TOEFL ITP. My
+          students always ask me what my judgment is about whether they will
+          get a high score on TOEFL ITP test. They even throw some numbers,
+          counts of correct items, randomly and ask if those numbers would be
+          enough for them to get a target score. Well, let me state without
+          messing: nobody can know. Not even ETS. But we can predict very
+          accurately. And if you are just interested in your score prediction,
+          use our calculator tool below. It will give you an estimate.
+        </p>
+      </div>
+      <div class="calculator-form-box">
+        <fieldset class="form-field">
+          <div>
+            <h2 class="secondary-title">
+              <strong>Enter the number of correct answers for each section
+                below.</strong>
+            </h2>
+          </div>
+          <div class="form-group">
+            <label for="listening">Listening:</label>
+            <input class="input-bar" placeholder="0-50" type="number" id="listening" min="0" max="50" />
+          </div>
+          <div class="form-group">
+            <label for="structure">Structure & Written Expression:</label>
+            <input class="input-bar" placeholder="0-40" type="number" id="structure" min="0" max="40" />
+          </div>
+          <div class="form-group">
+            <label for="reading">Reading:</label>
+            <input class="input-bar" placeholder="0-50" type="number" id="reading" min="0" max="50" />
+          </div>
+          <div>
+            <input class="my-button" type="button" value="CALCULATE" onclick="calculate()" />
+          </div>
+          <div>
+            <p class="result" id="your_itp_score"></p>
+          </div>
+        </fieldset>
+      </div>
+      <div>
+        <h2>
+          But why is it not possible to calculate my exact score beforehand
+          even if I know the number of correct items?
+        </h2>
+        <p>
+          TOEFL ITP is a unique exam in that it is developed by Educational
+          Testing Service (ETS) but applied by institutions. It ensures a
+          standardized construct of the test. However, ensuring a standard
+          test environment is highly dependent on the institution itself. ETS,
+          of course, has regulations and standards for this too. But even a
+          minor change in the testing environment of a paper based test such
+          as the height of the desks, the width of the testing room, or the
+          location of the building etc. might effect the test results. Those
+          effects might be positive or negative and very difficult to detect.
+          That's why TOEFL ITP scores are not calculated with predetermined
+          weightings. For example, we cannot say one correct listening answer
+          is 1.2 points of your total score.
+        </p>
+        <p>
+          Instead of using standard weights, ETS scores each test session
+          separately. In other words, whenever a test session occurs in an
+          institution, it is considered to be a unique test by itself. Even if
+          the same items and booklets were used during another session, their
+          scoring would be different from each other. So, the group of
+          individuals taking the test in a session has an immense effect on
+          how the scores are calculated.
+        </p>
+        <h2>How are the scores calculated?</h2>
+        <p>
+          To answer this question, I have to talk technically a little. No
+          worries, I will be shallow as much as I can: Statistically and
+          hypothetically speaking, if a group of individuals is crowded enough
+          to represent the population it belongs to, both the group's and
+          population's score distribution would look the same. We call this
+          the normal distribution, believed to be brought up by Carl Frederich
+          Gauss. That's why it is also called the Gaussian Distribution.
+        </p>
+        <p>
+          What does this have to do with TOEFL ITP? Well, the gaussian
+          distribution gives us an advantage. We can scale the scores of a
+          group on the same level of the population. Actually, there are even
+          standardized scales for that such as the z-scores and t-scores. So,
+          basically if separate groups in different sessions are normally
+          distributed, we can statistically place all these groups on the same
+          scale and get comparable scores. In TOEFL ITP, that's how they
+          manage to obtain standard scores from different test sessions. They
+          just check if the raw scores of the group in the session is normally
+          distributed. If so, the scores are simply converted to t-scores.
+          Then, to make it more comprehensible, they just multiply the
+          t-scores of individuals with 10. That's how your TOEFL ITP score is
+          calculated. And if the group is not normally distributed, which is a
+          very rare case if there are enough number of students, then there
+          are some other standardization techniques that can be utilized.
+        </p>
+        <p>
+          Why am I telling you all about this? Actually, my motive is to
+          convince you that in TOEFL ITP we cannot calculate your exact scores
+          prior to taking the test with the group in the session. We can just
+          use conversion tables and make strong guesses. This tool is also
+          doing the same. So, the scores here are not exactly accurate, but
+          they are highly plausible predictions.
+        </p>
+      </div>
     </section>
   </main>
   <footer class="footer">
