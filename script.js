@@ -81,21 +81,21 @@ gtag("js", new Date());
 gtag("config", "G-3QSQXNSTG5");
 
 
-  // Toggles showing/hiding each section
-  function toggleSection(sectionId) {
-    const header = event.target; 
-    const content = document.getElementById(sectionId);
+// Toggles showing/hiding each section
+function toggleSection(sectionId) {
+  const header = event.target; 
+  const content = document.getElementById(sectionId);
 
-    // Toggle the display
-    if (content.style.display === "none" || content.style.display === "") {
-      content.style.display = "block";
-      header.classList.add("active");
-    } else {
-      content.style.display = "none";
-      header.classList.remove("active");
-    }
+  // Toggle the display
+  if (content.style.display === "none" || content.style.display === "") {
+    content.style.display = "block";
+    header.classList.add("active");
+  } else {
+    content.style.display = "none";
+    header.classList.remove("active");
   }
+}
 
-  function checkAnswers() {
-    document.getElementById('answer-key').style.display = 'block';
+function checkAnswers() {
+  document.getElementById('answer-key').style.display = 'block';
 }
