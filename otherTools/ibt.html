@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>TOEFL IBT Calculator</title>
+    <meta name="keywords"
+        content="new toefl, itp, TOEFL 2023, IBT, score, calculator, puan, hesaplama, converter, calculate" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="icon" href="../icon.webp" />
+    <script src="../script.js"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6141054186060402"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <button class="hamburger" id="hamburger">&#9776;</button>
+        <ul id="nav-menu">
+            <li><a href="../index.html">ITP Calculator</a></li>
+            <li><a href="../tips.html">Preparation Tips</a></li>
+            <li><a href="../practice-tests.html">Practice Tests</a></li>
+            <li><a href="../otherTools.html">Other Tools</a></li>
+            <li><a href="../faq.html">FAQ</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <div class="header">
+            <h1 class="primary-title">
+                <strong>TOEFL IBT</strong> <small>Score Calculator</small>
+            </h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="body-box">
+            <div id="intro">
+                <h2>NEW TOEFL IBT Calculator tool after the changes on TOEFL in 2023!</h2>
+                <br>
+                <p>
+                    TOEFL IBT has changed in 2023 significantly. The new TOEFL IBT test is shorter and
+                    has fewer questions. This tool helps you to calculate your TOEFL IBT score
+                    based on the number of correct answers you get in each section.
+                    It will give you an approximate score along with a range.
+                    Read along for more information about the TOEFL IBT test format.
+                </p>
+            </div>
+
+            <div id="ad-box">
+                <br>
+                <!-- square_ad -->
+                <ins class="adsbygoogle" style="display: block" data-ad-client="ca-pub-6141054186060402"
+                    data-ad-slot="9204640472" data-ad-format="auto" data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+                <!-- square_ad -->
+                 <br>
+            </div>
+
+            <div class="calculator-form-box">
+                <fieldset class="form-field">
+                    <div>
+                        <h2 class="secondary-title">
+                            <strong>Enter the number of correct answers for each section
+                                below.</strong>
+                        </h2>
+                    </div>
+                    <div class="form-group">
+                        <label for="listening">Listening:</label>
+                        <input class="input-bar" placeholder="0-28" type="number" id="listening" min="0" max="28" />
+                    </div>
+                    <div class="form-group">
+                        <label for="reading">Reading:</label>
+                        <input class="input-bar" placeholder="0-22" type="number" id="reading" min="0" max="22" />
+                    </div>
+                    <div class="form-group">
+                        <label for="speaking">Speaking:</label>
+                        <input class="input-bar" placeholder="0-5" type="number" id="speaking" min="0" max="5" />
+                    </div>
+                    <div class="form-group">
+                        <label for="writing">Writing:</label>
+                        <input class="input-bar" placeholder="0-5" type="number" id="writing" min="0" max="5" />
+                    </div>
+                    <div style="display: flex; flex-direction: row; align-items: center; justify-content: center;">
+                        <input class="my-button" type="button" value="CALCULATE" onclick="calculateIbt()" />
+                    </div>  
+                    <div style="display: flex; flex-direction: row; align-items: center; justify-content: center;">
+                        <p class="result" id="ibt_score" style="font-size: 3.5em;"></p>
+                        <p class="result" id="ibt_score_info" style="margin: 0;"></p>
+                    </div>         
+                </fieldset>
+            </div>
+
+            <div id="ad-box">
+                <br>
+                <!-- square_ad -->
+                <ins class="adsbygoogle" style="display: block" data-ad-client="ca-pub-6141054186060402"
+                    data-ad-slot="9204640472" data-ad-format="auto" data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+                <!-- square_ad -->
+                 <br>
+            </div>
+            <img src="ibt-banner.png" alt="TOEFL IBT" class="intro-image" style="width: 100%"/>
+
+            <div id="test-format-table-box">
+                <table>
+                    <caption>Test Format</caption>
+                    <thead>
+                        <tr>
+                            <th>Test Section</th>
+                            <th>Number of Questions</th>
+                            <th>Estimated Timing</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Reading</td>
+                            <td>2 passages * 10 questions <br> Some questions are scored 2 points. </td>
+                            <td>35 minutes</td>
+                        </tr>
+                        <tr>
+                            <td>Listening</td>
+                            <td>3 lectures * 6 questions <br>2 conversations * 5 questions</td>
+                            <td>36 minutes</td>
+                        </tr>
+                        <tr>
+                            <td>Speaking</td>
+                            <td>4 tasks: 1 independent and 3 integrated <br> Each scored from 1 to 5</td>
+                            <td>16 minutes</td>
+                        </tr>
+                        <tr>
+                            <td>Writing</td>
+                            <td>2 tasks: 1 integrated and 1 writing for an academic discussion task <br> Each scored
+                                from 1 to 5</td>
+                            <td>20 + 10 minutes</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="ad-box">
+                <br>
+                <!-- square_ad -->
+                <ins class="adsbygoogle" style="display: block" data-ad-client="ca-pub-6141054186060402"
+                    data-ad-slot="9204640472" data-ad-format="auto" data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+                <!-- square_ad -->
+                 <br>
+            </div>        
+
+            <div id="listening-section">
+                <h2>TOEFL iBT Listening Section</h2>
+                <p>
+                    The Listening Section evaluates your ability to understand spoken English
+                    in academic settings. This includes listening to lectures and conversations
+                    and answering questions based on the information provided.
+                </p>
+            
+                <h3><small>Format</small></h3>
+                <p>
+                    <strong>Listening Material</strong>: <br />
+                    - 3 lectures, each 4–5 minutes long, about 500–750 words.<br />
+                    - 2 conversations, each about 3 minutes long, with 12–25 exchanges.<br />
+                    <strong>Questions</strong>: <br />
+                    - 6 questions per lecture.<br />
+                    - 5 questions per conversation.<br />
+                    <strong>Time Limit</strong>: 36 minutes, extendable to 41 minutes.<br />
+                </p>
+                <br />
+            
+                <h3><small>Academic Listening Skills</small></h3>
+                <p>The Listening Section measures three core skills:</p>
+                <ul>
+                    <li>
+                        <strong>Listening for Basic Comprehension</strong>: 
+                        Understanding the main ideas, major points, and important details without needing comprehension of all details.
+                    </li>
+                    <li>
+                        <strong>Listening for Pragmatic Understanding</strong>: 
+                        Recognizing the speaker's attitude, certainty level, and purpose.
+                    </li>
+                    <li>
+                        <strong>Connecting and Synthesizing Information</strong>: 
+                        Recognizing organization, relationships, and connections between ideas; making inferences and identifying changes in topics or tone.
+                    </li>
+                </ul>
+                <br />
+            
+                <h3><small>Question Types</small></h3>
+                <p>The Listening Section includes the following question formats:</p>
+                <ul>
+                    <li>Multiple-choice questions with one correct answer.</li>
+                    <li>
+                        Multiple-answer questions requiring more than one correct option.
+                    </li>
+                    <li>
+                        Ordering events or steps in a process.
+                    </li>
+                    <li>
+                        Matching objects or text to categories in a chart or marking checkboxes.
+                    </li>
+                </ul>
+                <br />
+            
+                <h3><small>Features</small></h3>
+                <p>
+                    <ul>
+                        <li>Taking notes is allowed during the test.</li>
+                        <li>
+                            Most questions are worth 1 point; some are worth 2 points, as indicated during the test.
+                        </li>
+                        <li>
+                            Some questions replay a portion of the lecture or conversation for additional context.
+                        </li>
+                    </ul>
+                </p>
+                <br />
+            
+                <h3><small>Academic Lectures</small></h3>
+                <p>
+                    Lectures simulate classroom scenarios where professors deliver content, often with occasional comments or questions from students.
+                    Pictures on the screen help identify the speakers' roles.
+                </p>
+            
+                <h3><small>Conversations in an Academic Setting</small></h3>
+                <p>
+                    Conversations may occur between students, professors, or university staff, covering academic or nonacademic topics. 
+                    Visual aids help provide context and identify roles.
+                </p>
+            </div>
+
+            <div id="ad-box">
+                <br>
+                <!-- square_ad -->
+                <ins class="adsbygoogle" style="display: block" data-ad-client="ca-pub-6141054186060402"
+                    data-ad-slot="9204640472" data-ad-format="auto" data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+                <!-- square_ad -->
+                 <br>
+            </div>
+
+            <div  id="reading-section">
+                <h2>TOEFL iBT Reading Section</h2>
+                <p>
+                    The Reading Section evaluates your ability to comprehend and analyze
+                    academic texts commonly used in university-level education.
+                </p>
+
+                <h3><small>Format</small></h3>
+                <p>
+                    <strong>Passages</strong>: 2 passages of approximately 700 words each.
+                    <br />
+                    <strong>Questions</strong>: 10 questions per passage. <br />
+                    <strong>Time Limit</strong>: 35 minutes, extendable to 36 minutes.
+                    <br />
+                </p>
+                <br />
+
+                <h3><small>Question Types</small></h3>
+                <p>The Reading Section includes the following formats:</p>
+                <ul>
+                    <li>Multiple-choice questions with one correct answer.</li>
+                    <li>
+                        Multiple-answer questions requiring more than one correct option.
+                    </li>
+                    <li>
+                        Sentence insertion tasks to identify where a sentence best fits in
+                        the passage.
+                    </li>
+                    <li>
+                        Reading-to-learn questions, which test your ability to organize
+                        information into summaries, worth up to 2 points each.
+                    </li>
+                </ul>
+            </div>
+
+            <div id="ad-box">
+                <br>
+                <!-- square_ad -->
+                <ins class="adsbygoogle" style="display: block" data-ad-client="ca-pub-6141054186060402"
+                    data-ad-slot="9204640472" data-ad-format="auto" data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+                <!-- square_ad -->
+                 <br>
+            </div>
+            
+            <div id="speaking-section">
+                <h2>TOEFL iBT Speaking Section</h2>
+                <p>
+                    The Speaking Section assesses your ability to communicate effectively in academic and campus settings. 
+                    It evaluates your skills in expressing opinions, summarizing information, and synthesizing ideas.
+                </p>
+            
+                <h3><small>Format</small></h3>
+                <p>
+                    <strong>Duration</strong>: Approximately 16 minutes. <br />
+                    <strong>Tasks</strong>: 4 tasks, including 1 independent task and 3 integrated tasks. <br />
+                </p>
+                <br />
+            
+                <h3><small>Academic Speaking Skills</small></h3>
+                <p>The Speaking Section evaluates your ability to:</p>
+                <ul>
+                    <li>Respond to questions and participate in discussions.</li>
+                    <li>Synthesize and summarize information from texts and lectures.</li>
+                    <li>Express opinions and communicate effectively in academic and non-academic settings.</li>
+                </ul>
+                <br />
+            
+                <h3><small>Task Types</small></h3>
+                <p>The Speaking Section includes the following tasks:</p>
+                <ul>
+                    <li>
+                        <strong>Independent Task</strong>: 
+                        Respond to a question about a familiar topic and provide your opinion with supporting details.
+                        <br />
+                        <em>Preparation Time</em>: 15 seconds. <br />
+                        <em>Response Time</em>: 45 seconds.
+                    </li>
+                    <li>
+                        <strong>Integrated Task 1: Fit and Explain Campus Situation</strong>: 
+                        Read a short passage and listen to a conversation. Summarize one speaker’s opinion.
+                        <br />
+                        <em>Preparation Time</em>: 30 seconds. <br />
+                        <em>Response Time</em>: 60 seconds.
+                    </li>
+                    <li>
+                        <strong>Integrated Task 2: General/Specific Academic Course Topic</strong>: 
+                        Read a passage and listen to a lecture. Combine key ideas and provide a summary.
+                        <br />
+                        <em>Preparation Time</em>: 30 seconds. <br />
+                        <em>Response Time</em>: 60 seconds.
+                    </li>
+                    <li>
+                        <strong>Integrated Task 3: Summary Academic Course Topic</strong>: 
+                        Listen to a lecture and summarize the main ideas and their relationship.
+                        <br />
+                        <em>Preparation Time</em>: 20 seconds. <br />
+                        <em>Response Time</em>: 60 seconds.
+                    </li>
+                </ul>
+                <br />
+            
+                <h3><small>Description</small></h3>
+                <p>
+                    In the independent task, you respond to a question about a familiar topic by drawing on personal experiences and opinions. <br />
+                    The integrated tasks require combining skills such as reading, listening, and speaking. For example:
+                    <ul>
+                        <li>Read a passage, listen to a conversation, and summarize key points.</li>
+                        <li>Listen to a lecture and summarize key information or connections.</li>
+                    </ul>
+                </p>
+                <p>
+                    All responses are recorded and submitted digitally for scoring by certified human raters and automated scoring systems.
+                </p>
+            </div>       
+
+            <div id="ad-box">
+                <br>
+                <!-- square_ad -->
+                <ins class="adsbygoogle" style="display: block" data-ad-client="ca-pub-6141054186060402"
+                    data-ad-slot="9204640472" data-ad-format="auto" data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+                <!-- square_ad -->
+                 <br>
+            </div>            
+         
+            <div id="writing-section">
+                <h2>TOEFL iBT Writing Section</h2>
+                <p>
+                    The Writing Section measures your ability to present ideas clearly and effectively in an academic setting. 
+                    It evaluates your skills in integrating information from various sources and expressing it coherently.
+                </p>
+            
+                <h3><small>Format</small></h3>
+                <p>
+                    <strong>Duration</strong>: 30 minutes. <br />
+                    <strong>Tasks</strong>: 2 tasks, including Integrated Writing and Writing for an Academic Discussion. <br />
+                </p>
+                <br />
+            
+                <h3><small>Academic Writing Skills</small></h3>
+                <p>The Writing Section evaluates your ability to:</p>
+                <ul>
+                    <li>Take notes on reading and listening passages to organize ideas before writing.</li>
+                    <li>Summarize, paraphrase, and accurately refer to source material.</li>
+                    <li>Express ideas in an organized, logical, and coherent manner.</li>
+                    <li>Use appropriate grammar, vocabulary, and linking words for clarity and flow.</li>
+                    <li>Follow conventions of spelling, punctuation, and layout.</li>
+                </ul>
+                <br />
+            
+                <h3><small>Task Types</small></h3>
+                <p>The Writing Section includes the following tasks:</p>
+                <ul>
+                    <li>
+                        <strong>Task 1: Integrated Writing (Read/Listen/Write)</strong>: 
+                        <br />
+                        - Read a short passage (250–300 words) on an academic topic.<br />
+                        - Listen to a lecture (250–320 words) on the same topic and take notes.<br />
+                        - Summarize and combine ideas from the passage and lecture in an organized manner.<br />
+                        <em>Response Time</em>: 20 minutes.
+                    </li>
+                    <li>
+                        <strong>Task 2: Writing for an Academic Discussion</strong>: 
+                        <br />
+                        - Write a post in response to a professor’s question in an online discussion. <br />
+                        - Engage with classmates’ posts or present a unique argument/opinion.<br />
+                        - An effective response typically contains at least 100 words.<br />
+                        <em>Response Time</em>: 10 minutes.
+                    </li>
+                </ul>
+                <br />
+            
+                <h3><small>Description</small></h3>
+                <p>
+                    In the Integrated Writing task, you will synthesize information from both a reading passage and a listening lecture. 
+                    The goal is to combine ideas and provide a coherent response using evidence from both sources. <br />
+                    The Academic Discussion task requires you to contribute to an online academic conversation by sharing opinions, agreeing/disagreeing with classmates, or introducing new ideas. 
+                    Both tasks are scored based on clarity, organization, grammar, and relevance.
+                </p>
+                <p>
+                    Responses are typed into the computer and submitted digitally for evaluation by certified raters and automated scoring systems.
+                </p>
+            </div>
+
+            <div id="ad-box">
+                <br>
+                <!-- square_ad -->
+                <ins class="adsbygoogle" style="display: block" data-ad-client="ca-pub-6141054186060402"
+                    data-ad-slot="9204640472" data-ad-format="auto" data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+                <!-- square_ad -->
+                 <br>
+            </div>
+            
+
+            
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p><strong>Disclaimer:</strong></p>
+        <p>
+            Please send any feedback or queries to
+            <a href="mailto:admin@itp-calculator.com">admin@itp-calculator.com</a>.
+        </p>
+    </footer>
+</body>
+
+</html>

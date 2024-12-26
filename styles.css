@@ -1,9 +1,10 @@
 /* General Styles */
-body, html {
+body,
+html {
     font-family: 'Roboto', Arial, sans-serif;
-    margin: 0;    
+    margin: 0;
     padding: 0;
-    padding-top: 20px; 
+    padding-top: 20px;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -11,7 +12,12 @@ body, html {
     background-color: #f4f4f4;
 }
 
-h1, h2, h3, p, ul, li {
+h1,
+h2,
+h3,
+p,
+ul,
+li {
     color: #333;
     margin: 0;
     padding: 0;
@@ -146,7 +152,7 @@ main {
 }
 
 /* Form Styles */
-.calculator-form-box{
+.calculator-form-box {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -190,8 +196,25 @@ main {
     margin: 0;
 }
 
+.calculator-link {
+    cursor: pointer;
+    background-color: #ffffff;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    color: #333333;
+    text-decoration: none;
+    height: auto;
+}
+
+.calculator-link:hover {
+    background-color: #f0f0f0;
+}
+
 /* Preperation Tips Styles */
-     
+
 .prep-tip-header {
     cursor: pointer;
     background-color: #ffffff;
@@ -214,7 +237,7 @@ main {
     border-radius: 4px;
     padding: 1rem;
     margin-bottom: 1.5rem;
-    margin-top: -0.5rem; 
+    margin-top: -0.5rem;
 }
 
 .prep-tip-header::after {
@@ -240,7 +263,8 @@ main {
 
 
 /* Footer Styles */
-footer, .footer {
+footer,
+.footer {
     text-align: center;
     padding: 20px;
     background-color: #f8f9fa;
@@ -248,12 +272,14 @@ footer, .footer {
     font-size: 0.9em;
 }
 
-footer a, .footer a {
+footer a,
+.footer a {
     color: #007bff;
     text-decoration: none;
 }
 
-footer a:hover, .footer a:hover {
+footer a:hover,
+.footer a:hover {
     text-decoration: underline;
 }
 
@@ -273,47 +299,75 @@ footer a:hover, .footer a:hover {
 
 
 .tip-box {
-  background-color: white;
-  border-radius: 5px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-}        
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
 
 .popup-notice {
-    display: none; /* Hidden by default */
+    display: none;
+    /* Hidden by default */
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Black background with opacity */
     justify-content: center;
     align-items: center;
-    z-index: 1001; /* Ensure it is on top */
-  }
+    z-index: 1001;
+    /* Ensure it is on top */
+}
 
-  .popup-content {
+.popup-content {
     background-color: white;
     max-width: 75%;
     border-radius: 5px;
     text-align: center;
     position: relative;
-  }
+}
 
-  .popup-close-btn {
+.popup-close-btn {
     position: absolute;
     top: 10px;
     right: 10px;
     font-size: 20px;
     cursor: pointer;
-  }
+}
+
+/* Table Styles */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-      main {
+    main {
         max-width: 90%;
     }
+
     .scores {
         padding: 5px;
     }
@@ -380,5 +434,20 @@ footer a:hover, .footer a:hover {
 
     nav ul.show {
         display: flex;
+    }
+
+
+    table {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    th,
+    td {
+        padding: 5px;
+    }
+
+    caption {
+        font-size: 1.2em;
     }
 }
