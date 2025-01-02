@@ -31,8 +31,8 @@ const calculate = () => {
   const itp_score = Math.round(
     ((listening_converted_score +
       structure_converted_score +
-      reading_converted_score) /
-      3) *
+      reading_converted_score) / 
+      3) * 
       10
   );
 
@@ -44,7 +44,7 @@ const calculate = () => {
     resultElement.innerHTML =
       "You entered INVALID number of correct answers. <br> Maximum correct answers are 50, 40, 50 for Listening, Structure and Reading respectively.";
   } else {
-    resultElement.innerHTML = `Your TOEFL ITP score is ${itp_score}`;
+    resultElement.innerHTML = `Your TOEFL ITP score is ${itp_score}. <br> Listening: ${listening_converted_score}, Structure: ${structure_converted_score}, Reading: ${reading_converted_score}`;
   }
 };
 
